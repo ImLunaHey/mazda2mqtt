@@ -1,0 +1,14 @@
+mqtt:
+  host:             # your mqtthost
+  port:             # your mqtt port default 1883
+  user:             # your mqtt user or empty when no authentication
+  password:         # your mqtt password
+  topic:            # your mqtt topic
+  clientname:       # your mqtt clientname
+mazda:
+  user:             # email address from your Mazda account
+  password:         # password from your Mazda account
+  region:           # your Region (MNAO:North America, MME:Europe, MJO:Japan)
+status:
+  wait:             # wait time getting status
+  refreshwait:      # wait time in minutes after refresh data
