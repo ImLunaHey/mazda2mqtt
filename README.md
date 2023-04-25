@@ -1,2 +1,2 @@
 # mazda2mqtt
-Publish all Mazda Car Data to MQTT
+Publish all myMazda Car Data to MQTT
