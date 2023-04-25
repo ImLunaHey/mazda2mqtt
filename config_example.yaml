@@ -6,8 +6,8 @@ mqtt:
   topic: mazda2mqtt      # your mqtt topic default mzda2mqtt
   clientname: mazda2mqtt # your mqtt clientname default mazda2mqtt
 mazda:
-  user:                  # email address from your Mazda account
-  password:              # password from your Mazda account
+  user:                  # email address from your myMazda account
+  password:              # password from your myMazda account
   region: MME            # your Region (MNAO:North America, MME:Europe, MJO:Japan) default MME
 status:
   wait: 30               # wait time in minutes getting status default 30

@@ -12,7 +12,7 @@ async def main() -> None:
             if type(object[key]) == dict:
                 create_msg(object[key], vehicleid, mqtt_topic, indent + key + '/')
             else:
-                msg.insert(0, (mqtt_topic + '/' + str(vehicleid) + indent + key, object[key],1))
+                msg.insert(0, (mqtt_topic + '/' + str(vehicleid) + indent + key, object[key], 0, True))
 
         publish.multiple(msg, hostname=mqtt_broker_address, port=mqtt_broker_port, client_id=mqtt_clientname,
                         auth=mqtt_auth)
