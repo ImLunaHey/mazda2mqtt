@@ -6,13 +6,23 @@ Clone the git repository.
 Create a virtual environment and install the requirements:  
 ```
 apt install python-virtualenv
-virtualenv -p python3 ~/mazda2mqtt.env
-source ~/myzda2mqtt.enc/bin/acrivate
 cd mazda2mqtt 
+
+virtualenv -p python3 ../mazda2mqtt.env
+source ../myzda2mqtt.enc/bin/activate
+
 pip3 install -r requirements.txt
 ```
+Then copy config_example.yaml to config.yaml an insert your data.  
+Start mazda2mqtt:
+```
+cd mazda2mqtt
+source ../myzda2mqtt.enc/bin/activate
+python mazda2mqtt.py
+```
 
-or build a Docker Image
+Or build your own Docker Image
 ```
 docker build https://github.com/C64Axel/mazda2mqtt.git#dev -t mazda2mqtt:latest
 ```
+Start the container with /usr/src/app/config.yaml mapped to the config file
