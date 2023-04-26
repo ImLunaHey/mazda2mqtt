@@ -13,10 +13,12 @@ async def main() -> None:
                 create_msg(object[key], vehicleid, mqtt_topic, indent + key + '/')
             else:
                 msg.insert(0, (mqtt_topic + '/' + str(vehicleid) + indent + key, object[key], 0, True))
-
-        publish.multiple(msg, hostname=mqtt_broker_address, port=mqtt_broker_port, client_id=mqtt_clientname,
-                        auth=mqtt_auth)
-        return msg
+        try:
+            publish.multiple(msg, hostname=mqtt_broker_address, port=mqtt_broker_port, client_id=mqtt_clientname,
+                            auth=mqtt_auth)
+        except:
+            print('Can not publish')
+        return
 
     # Read Config
     with open('config.yaml', 'r') as configfile:
