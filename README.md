@@ -9,7 +9,7 @@ apt install python-virtualenv
 cd mazda2mqtt 
 
 virtualenv -p python3 ../mazda2mqtt.env
-source ../myzda2mqtt.enc/bin/activate
+source ../myzda2mqtt.env/bin/activate
 
 pip3 install -r requirements.txt
 ```
