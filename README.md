@@ -17,7 +17,7 @@ Then copy config_example.yaml to config.yaml an insert your data.
 Start mazda2mqtt:
 ```
 cd mazda2mqtt
-source ../myzda2mqtt.enc/bin/activate
+source ../myzda2mqtt.env/bin/activate
 python mazda2mqtt.py
 ```
 
