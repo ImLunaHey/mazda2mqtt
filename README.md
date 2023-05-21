@@ -1,6 +1,10 @@
 # mazda2mqtt
 Publish all myMazda Car Data to MQTT
 
+Prerequisites:
+1. Setup your Car in the mymazda app.
+2. Create a second Driver for mazda2mqtt.
+
 ## Installation Guide:
 Clone the git repository.  
 Create a virtual environment and install the requirements:  

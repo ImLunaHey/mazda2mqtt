@@ -3,7 +3,7 @@ mqtt:
   port: 1883             # your mqtt port default 1883
   user:                  # your mqtt user or empty when no authentication
   password:              # your mqtt password
-  topic: mazda2mqtt      # your mqtt topic default mzda2mqtt
+  topic: mazda2mqtt      # your mqtt topic default mzda2mqtt. Leave it default for evcc
   clientname: mazda2mqtt # your mqtt clientname default mazda2mqtt
 mazda:
   user:                  # email address from your myMazda account
