@@ -1,5 +1,11 @@
 # mazda2mqtt
-Publish all myMazda Car Data to MQTT
+**Publish all myMazda Car Data to MQTT**
+
+---
+># !! ATTENTION !!!
+>***A too frequent refresh of the data can drain your 12V starter battery of the car.  
+So use this Programm at your own risk***
+---
 
 Prerequisites:
 1. Setup your Car in the mymazda app.
@@ -33,3 +39,7 @@ Start the container with /usr/src/app/config.yaml mapped to the config file
 ```
 docker run -d --name mazda2mqtt --restart unless-stopped -v <YOUR_DIR/config.yaml>:/usr/src/app/config.yaml mazda2mqtt:latest
 ```
+---
+### History:
+
+26.04.2023 Initial Version
