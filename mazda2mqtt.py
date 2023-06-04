@@ -61,14 +61,18 @@ async def main() -> None:
         create_msg(vehicle,vehicle['vin'], mqtt_topic)
 
     try:
+        print('refresh all vehicles data and wait')
+        for vehicle in vehicles:
+            # refresh data
+            await mazdaclient.refresh_vehicle_status(vehicle['id'])
+    except:
+        print('can not refresh all vehicles data')
+        await mazdaclient.close()
+
+    sleep(status_refreshwait * 60)
+
+    try:
         while True:
-            print('refresh all vehicles data and wait')
-            for vehicle in vehicles:
-                # refresh data
-                await mazdaclient.refresh_vehicle_status(vehicle['id'])
-
-            sleep(status_refreshwait * 60)
-
             print('publish all vehicles status')
             for vehicle in vehicles:
                 # publish vehicle status

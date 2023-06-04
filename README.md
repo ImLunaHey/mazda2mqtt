@@ -4,8 +4,9 @@
 ---
 ># !! ATTENTION !!!
 >***A too frequent refresh of the data can drain your 12V starter battery of the car.  
-So use this Programm at your own risk***
+So use this Program at your own risk***
 ---
+Please look at the History Section for new Parameters.
 
 Prerequisites:
 1. Setup your Car in the mymazda app.
@@ -42,4 +43,8 @@ docker run -d --name mazda2mqtt --restart unless-stopped -v <YOUR_DIR/config.yam
 ---
 ### History:
 
-26.04.2023 Initial Version
+| Date | Change |
+|-------|--------|
+|26.04.2023|Initial Version|
+|03.06.2023|only one refresh at the beginning because risk of battery dry|
+
