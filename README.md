@@ -53,9 +53,9 @@ mazda2mqtt/SET/<VIN>/refresh
 ---
 ### History:
 
-| Date | Change                                                        |
-|-------|---------------------------------------------------------------|
-|26.04.2023| Initial Version                                               |
-|03.06.2023| only one refresh at the beginning because risk of battery dry |
-|xx.06.2023| refresh Data via MQTT                                         |
+| Date       | Change                                                        |
+|------------|---------------------------------------------------------------|
+| 26.04.2023 | Initial Version                                               |
+| 03.06.2023 | only one refresh at the beginning because risk of battery dry |
+| 08.06.2023 | refresh Data via MQTT                                         |
 
