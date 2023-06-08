@@ -96,7 +96,7 @@ async def main() -> None:
         logging.error('can not refresh all vehicles data')
         await mazda_client.close()
 
-    logging.info('wait for data')
+    logging.info('wait ' + status_refreshwait + 's for data after refresh')
     await asyncio.sleep(status_refreshwait)
 
     # Main loop
@@ -113,7 +113,7 @@ async def main() -> None:
                         for vehicle in vehicles:
                             if vehicle['vin'] == mqtt_cmd[0]:
                                 found = True
-                                logging.info('send refresh for ' + vehicle['vin'] +  ' and wait')
+                                logging.info('send refresh for ' + vehicle['vin'] +  ' and wait' + status_refreshwait + 's')
                                 await mazda_client.refresh_vehicle_status(vehicle['id'])
                                 await asyncio.sleep(status_refreshwait)
                                 await get_and_publish(vehicle)

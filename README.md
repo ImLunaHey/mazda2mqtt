@@ -33,13 +33,13 @@ source ../myzda2mqtt.env/bin/activate
 python mazda2mqtt.py
 ```
 
-Or build your own Docker Image
+Or download the Docker Image
 ```
-docker build https://github.com/C64Axel/mazda2mqtt.git#master -t mazda2mqtt:latest
+docker pull ghcr.io/c64axel/mazda2mqtt:main
 ```
 Start the container with /usr/src/app/config.yaml mapped to the config file
 ```
-docker run -d --name mazda2mqtt --restart unless-stopped -v <YOUR_DIR/config.yaml>:/usr/src/app/config.yaml mazda2mqtt:latest
+docker run -d --name mazda2mqtt --restart unless-stopped -v <YOUR_DIR/config.yaml>:/usr/src/app/config.yaml mazda2mqtt:main
 ```
 ---
 **MQTT-API**
