@@ -1,9 +1,11 @@
 # mazda2mqtt
 **Publish all myMazda Car Data to MQTT**
 
+![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)
 ---
 ># !! ATTENTION !!!
->***A too frequent refresh of the data can drain your 12V starter battery of the car.  
+>***A too frequent refresh of the data can discharge your 12V starter battery of the car.  
 So use this Program at your own risk***
 ---
 
@@ -53,9 +55,9 @@ mazda2mqtt/SET/<VIN>/refresh
 ---
 ### History:
 
-| Date       | Change                                                        |
-|------------|---------------------------------------------------------------|
-| 26.04.2023 | Initial Version                                               |
-| 03.06.2023 | only one refresh at the beginning because risk of battery dry |
-| 08.06.2023 | refresh Data via MQTT                                         |
+| Date       | Change                                                              |
+|------------|---------------------------------------------------------------------|
+| 26.04.2023 | Initial Version                                                     |
+| 03.06.2023 | only one refresh at the beginning because risk of battery discharge |
+| 08.06.2023 | refresh Data via MQTT                                               |
 
